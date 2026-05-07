@@ -55,66 +55,471 @@
 // }
 
 
+
+
+
+
+
+
+
+
+
+// "use client";
+
+// import { motion } from "framer-motion";
+
+// export default function Hero() {
+//   return (
+//     <section
+//       className="relative min-h-screen w-full flex items-center justify-start"
+//       style={{
+//         backgroundImage: "url('/bgtri.png')",
+//         backgroundSize: "cover",
+//         backgroundPosition: "center",
+//         backgroundRepeat: "no-repeat",
+//       }}
+//     >
+//       {/* Overlay */}
+//       <div className="absolute inset-0 bg-[#003b72]/50 backdrop-blur-[1px]" />
+
+//       <motion.div
+//         initial={{ opacity: 0, x: -140 }}
+//         whileInView={{ opacity: 1, x: 0 }}
+//         transition={{ duration: 0.9, ease: "easeOut" }}
+//         viewport={{ once: false }}
+//         className="relative max-w-2xl text-left px-6 ml-10 md:ml-20 text-white mt-24"
+//       >
+//         <span className="text-xs sm:text-sm font-medium bg-white/20 backdrop-blur-xl px-4 py-2 rounded-full border border-white/30 tracking-wide">
+//           SMART AUTOMATION SOLUTIONS
+//         </span>
+
+//         <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight drop-shadow-md">
+//           Smart Home Automation
+//           <br />
+//           <span className="text-[#3592ea]">Made Simple & Secure</span>
+//         </h1>
+
+//         <p className="text-lg mt-6 opacity-90 max-w-md drop-shadow-sm">
+//           Integrated Smart Home Solutions designed for comfort,
+//           energy efficiency, and security.
+//         </p>
+
+//         {/* BUTTONS */}
+//         <div className="mt-8 flex gap-4">
+//           {/* ⭐ Animated Know More Button */}
+//           <motion.button
+//             whileHover={{ scale: 1.08 }}
+//             whileTap={{ scale: 0.95 }}
+//             animate={{
+//               boxShadow: [
+//                 "0 0 0px rgba(53,146,234,0.0)",
+//                 "0 0 20px rgba(53,146,234,0.7)",
+//                 "0 0 0px rgba(53,146,234,0.0)",
+//               ],
+//             }}
+//             transition={{ duration: 1.7, repeat: Infinity }}
+//             className="px-8 py-3 bg-[#3592ea] text-white rounded-full font-semibold shadow-lg"
+//           >
+//             Know More
+//           </motion.button>
+//         </div>
+//       </motion.div>
+//     </section>
+//   );
+// }
+
+
+
+
+
+
+
+// "use client";
+
+// import { motion } from "framer-motion";
+// import { CheckCircle, Phone, MessageCircle } from "lucide-react";
+
+// export default function Hero() {
+//   return (
+//     <section
+//       className="relative min-h-screen w-full overflow-hidden flex items-center"
+//       style={{
+//         backgroundImage: "url('/hospital-bg.jpg')",
+//         backgroundSize: "cover",
+//         backgroundPosition: "center",
+//         backgroundRepeat: "no-repeat",
+//       }}
+//     >
+//       {/* DARK OVERLAY */}
+//       <div className="absolute inset-0 bg-gradient-to-r from-[#05203c]/95 via-[#05203c]/80 to-[#05203c]/40" />
+
+//       {/* MAIN CONTENT */}
+//       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full">
+//         <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+//           {/* LEFT SIDE */}
+//           <motion.div
+//             initial={{ opacity: 0, x: -80 }}
+//             animate={{ opacity: 1, x: 0 }}
+//             transition={{ duration: 0.8 }}
+//             className="text-white pt-28 lg:pt-20"
+//           >
+//             {/* TOP BADGE */}
+//             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-4 py-2 text-sm font-medium">
+//               🏥 Trusted Healthcare Partner
+//             </div>
+
+//             {/* HEADING */}
+//             <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-6">
+//               Get the Right Surgery,
+//               <br />
+//               <span className="text-[#4da6ff]">
+//                 Without the Stress
+//               </span>
+//             </h1>
+
+//             {/* SUBTEXT */}
+//             <p className="mt-6 text-lg text-gray-200 max-w-xl leading-relaxed">
+//               Consult experienced doctors, compare top hospitals,
+//               and get complete support — from consultation to recovery.
+//             </p>
+
+//             {/* STATS */}
+//             <div className="flex flex-wrap gap-10 mt-10">
+//               <div>
+//                 <h2 className="text-3xl font-bold">1000+</h2>
+//                 <p className="text-gray-300 text-sm mt-1">
+//                   Patients Assisted
+//                 </p>
+//               </div>
+
+//               <div>
+//                 <h2 className="text-3xl font-bold">50+</h2>
+//                 <p className="text-gray-300 text-sm mt-1">
+//                   Expert Doctors
+//                 </p>
+//               </div>
+
+//               <div>
+//                 <h2 className="text-3xl font-bold">25+</h2>
+//                 <p className="text-gray-300 text-sm mt-1">
+//                   Partner Hospitals
+//                 </p>
+//               </div>
+//             </div>
+
+//             {/* TRUST POINTS */}
+//             <div className="mt-8 space-y-3">
+//               {[
+//                 "Verified Surgeons & Specialists",
+//                 "Insurance & EMI Support",
+//                 "Complete End-to-End Care",
+//               ].map((item, i) => (
+//                 <div
+//                   key={i}
+//                   className="flex items-center gap-3 text-gray-200"
+//                 >
+//                   <CheckCircle
+//                     className="text-[#4da6ff]"
+//                     size={20}
+//                   />
+//                   <span>{item}</span>
+//                 </div>
+//               ))}
+//             </div>
+
+//             {/* BUTTONS */}
+//             <div className="mt-10 flex flex-wrap gap-4">
+//               {/* PRIMARY BUTTON */}
+//               <motion.button
+//                 whileHover={{ scale: 1.05 }}
+//                 whileTap={{ scale: 0.96 }}
+//                 className="bg-[#3592ea] hover:bg-[#2383df] transition px-8 py-4 rounded-2xl text-white font-semibold shadow-2xl"
+//               >
+//                 Book Free Consultation
+//               </motion.button>
+
+//               {/* WHATSAPP BUTTON */}
+//               <motion.a
+//                 whileHover={{ scale: 1.05 }}
+//                 whileTap={{ scale: 0.96 }}
+//                 href="https://wa.me/919999999999?text=Hi, I want consultation for treatment"
+//                 target="_blank"
+//                 className="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-2xl text-white font-semibold flex items-center gap-2 shadow-2xl"
+//               >
+//                 <MessageCircle size={20} />
+//                 WhatsApp Now
+//               </motion.a>
+//             </div>
+//           </motion.div>
+
+//           {/* RIGHT SIDE FORM */}
+//           <motion.div
+//             initial={{ opacity: 0, y: 70 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.9 }}
+//             className="relative"
+//           >
+//             <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-[0_20px_80px_rgba(0,0,0,0.25)] p-8 lg:p-10 max-w-md mx-auto">
+
+//               {/* FORM TITLE */}
+//               <h3 className="text-3xl font-bold text-center text-[#05203c]">
+//                 Get Free Consultation
+//               </h3>
+
+//               <p className="text-center text-gray-500 mt-2 mb-8">
+//                 Our care team will contact you within 10 minutes
+//               </p>
+
+//               {/* INPUTS */}
+//               <div className="space-y-4">
+//                 <input
+//                   type="text"
+//                   placeholder="Patient Name"
+//                   className="w-full border border-gray-200 rounded-xl px-5 py-4 outline-none focus:border-[#3592ea]"
+//                 />
+
+//                 <input
+//                   type="text"
+//                   placeholder="Mobile Number"
+//                   className="w-full border border-gray-200 rounded-xl px-5 py-4 outline-none focus:border-[#3592ea]"
+//                 />
+
+//                 <select className="w-full border border-gray-200 rounded-xl px-5 py-4 outline-none focus:border-[#3592ea]">
+//                   <option>Select City</option>
+//                   <option>Delhi</option>
+//                   <option>Noida</option>
+//                   <option>Gurgaon</option>
+//                 </select>
+
+//                 <select className="w-full border border-gray-200 rounded-xl px-5 py-4 outline-none focus:border-[#3592ea]">
+//                   <option>Select Treatment</option>
+//                   <option>LASIK</option>
+//                   <option>Kidney Stone</option>
+//                   <option>Bariatric</option>
+//                 </select>
+//               </div>
+
+//               {/* SUBMIT BUTTON */}
+//               <motion.button
+//                 whileHover={{ scale: 1.02 }}
+//                 whileTap={{ scale: 0.97 }}
+//                 className="w-full mt-6 bg-[#3592ea] hover:bg-[#2383df] transition text-white py-4 rounded-xl font-semibold shadow-lg"
+//               >
+//                 Get Free Consultation
+//               </motion.button>
+
+//               {/* CALL INFO */}
+//               <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-600">
+//                 <Phone size={16} />
+//                 <span>Need urgent help? Call: +91 9876543210</span>
+//               </div>
+//             </div>
+//           </motion.div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
+
 "use client";
 
 import { motion } from "framer-motion";
+import {
+  CheckCircle,
+  MessageCircle,
+  Phone,
+} from "lucide-react";
 
 export default function Hero() {
   return (
-    <section
-      className="relative min-h-screen w-full flex items-center justify-start"
-      style={{
-        backgroundImage: "url('/bgtri.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-[#003b72]/50 backdrop-blur-[1px]" />
+   <section className="relative min-h-screen overflow-hidden bg-gradient-to-r from-white via-[#f7fbfa] to-[#eef9f7] flex items-center">
 
-      <motion.div
-        initial={{ opacity: 0, x: -140 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.9, ease: "easeOut" }}
-        viewport={{ once: false }}
-        className="relative max-w-2xl text-left px-6 ml-10 md:ml-20 text-white mt-24"
-      >
-        <span className="text-xs sm:text-sm font-medium bg-white/20 backdrop-blur-xl px-4 py-2 rounded-full border border-white/30 tracking-wide">
-          SMART AUTOMATION SOLUTIONS
-        </span>
+      {/* BACKGROUND SHAPES */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#0F766E]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-[#22C55E]/10 rounded-full blur-3xl" />
 
-        <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight drop-shadow-md">
-          Smart Home Automation
-          <br />
-          <span className="text-[#3592ea]">Made Simple & Secure</span>
-        </h1>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-2 pb-20 w-full">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-        <p className="text-lg mt-6 opacity-90 max-w-md drop-shadow-sm">
-          Integrated Smart Home Solutions designed for comfort,
-          energy efficiency, and security.
-        </p>
-
-        {/* BUTTONS */}
-        <div className="mt-8 flex gap-4">
-          {/* ⭐ Animated Know More Button */}
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            animate={{
-              boxShadow: [
-                "0 0 0px rgba(53,146,234,0.0)",
-                "0 0 20px rgba(53,146,234,0.7)",
-                "0 0 0px rgba(53,146,234,0.0)",
-              ],
-            }}
-            transition={{ duration: 1.7, repeat: Infinity }}
-            className="px-8 py-3 bg-[#3592ea] text-white rounded-full font-semibold shadow-lg"
+          {/* LEFT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: -70 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            Know More
-          </motion.button>
+            {/* BADGE */}
+            <div className="inline-flex items-center gap-2 bg-[#0F766E]/10 text-[#0F766E] border border-[#0F766E]/20 rounded-full px-5 py-2 text-sm font-medium">
+              🏥 Trusted Healthcare Partner
+            </div>
+
+            {/* HEADING */}
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900 mt-6">
+              Get the Right Surgery,
+              <br />
+              <span className="text-[#0F766E]">
+                Without Stress
+              </span>
+            </h1>
+
+            {/* SUBTEXT */}
+            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+              Consult experienced doctors, compare top hospitals,
+              and get complete support — from consultation to recovery.
+            </p>
+
+            {/* STATS */}
+            <div className="flex flex-wrap gap-10 mt-10">
+              <div>
+                <h2 className="text-3xl font-bold text-[#0F766E]">
+                  1000+
+                </h2>
+                <p className="text-gray-500 text-sm mt-1">
+                  Patients Assisted
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-[#0F766E]">
+                  50+
+                </h2>
+                <p className="text-gray-500 text-sm mt-1">
+                  Expert Doctors
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-[#0F766E]">
+                  25+
+                </h2>
+                <p className="text-gray-500 text-sm mt-1">
+                  Partner Hospitals
+                </p>
+              </div>
+            </div>
+
+            {/* TRUST POINTS */}
+            <div className="mt-8 space-y-4">
+              {[
+                "Verified Surgeons & Specialists",
+                "Insurance & EMI Support",
+                "Complete End-to-End Care",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-3 text-gray-700"
+                >
+                  <CheckCircle
+                    className="text-[#22C55E]"
+                    size={22}
+                  />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* BUTTONS */}
+            <div className="mt-10 flex flex-wrap gap-4">
+
+              {/* PRIMARY CTA */}
+              <motion.button
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-[#0F766E] hover:bg-[#0b5f58] transition text-white px-8 py-4 rounded-2xl font-semibold shadow-xl"
+              >
+                Book Free Consultation
+              </motion.button>
+
+              {/* WHATSAPP */}
+              <motion.a
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                href="https://wa.me/919999999999?text=Hi, I want consultation for treatment"
+                target="_blank"
+                className="bg-[#22C55E] hover:bg-[#16a34a] transition text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-2 shadow-xl"
+              >
+                <MessageCircle size={20} />
+                WhatsApp Now
+              </motion.a>
+            </div>
+
+            {/* URGENCY / ACCENT */}
+            <div className="mt-8 inline-flex items-center gap-2 bg-orange-50 border border-orange-200 text-orange-600 px-5 py-3 rounded-xl text-sm font-medium">
+              🔥 Free Consultation Available Today
+            </div>
+          </motion.div>
+
+          {/* RIGHT SIDE FORM */}
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            className="relative"
+          >
+            {/* FORM CARD */}
+            <div className="bg-white border border-gray-100 rounded-3xl shadow-[0_20px_70px_rgba(0,0,0,0.08)] p-8 lg:p-10 max-w-md mx-auto">
+
+              {/* TITLE */}
+              <h3 className="text-3xl font-bold text-center text-gray-900">
+                Get Free Consultation
+              </h3>
+
+              <p className="text-center text-gray-500 mt-2 mb-8">
+                Our care team will contact you within 10 minutes
+              </p>
+
+              {/* INPUTS */}
+              <div className="space-y-4">
+
+                <input
+                  type="text"
+                  placeholder="Patient Name"
+                  className="w-full border border-gray-200 rounded-2xl px-5 py-4 outline-none focus:border-[#0F766E]"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Mobile Number"
+                  className="w-full border border-gray-200 rounded-2xl px-5 py-4 outline-none focus:border-[#0F766E]"
+                />
+
+                <select className="w-full border border-gray-200 rounded-2xl px-5 py-4 outline-none focus:border-[#0F766E]">
+                  <option>Select City</option>
+                  <option>Delhi</option>
+                  <option>Noida</option>
+                  <option>Gurgaon</option>
+                </select>
+
+                <select className="w-full border border-gray-200 rounded-2xl px-5 py-4 outline-none focus:border-[#0F766E]">
+                  <option>Select Treatment</option>
+                  <option>LASIK</option>
+                  <option>Kidney Stone</option>
+                  <option>Bariatric</option>
+                </select>
+              </div>
+
+              {/* CTA BUTTON */}
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="w-full mt-6 bg-[#0F766E] hover:bg-[#0b5f58] transition text-white py-4 rounded-2xl font-semibold shadow-lg"
+              >
+                Get Free Consultation
+              </motion.button>
+
+              {/* SUPPORT */}
+              <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-500">
+                <Phone size={16} />
+                <span>Need urgent help? Call: +91 9876543210</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

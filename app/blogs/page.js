@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 
 
 export const metadata  = {
-  title: 'Blogs - Trinetra',
-  description: ' Trinetra Technoworld designs homes using cutting-edge technology and eco-friendly solutions. Our approach ensures a seamless blend of future-ready automation with everyday living',
-  keywords: 'Trinetra ',
+  title: 'Contact Us - Jeevo Health ',
+  description: 'Jeevo Health',
+  keywords: 'Jeevo Health ',
   openGraph: {
-  title: 'Trinetra Technoworld',
-  description:  ' Trinetra Technoworld designs homes using cutting-edge technology and eco-friendly solutions. Our approach ensures a seamless blend of future-ready automation with everyday living',
+  title: 'Jeevo Health ',
+  description:  'Jeevo Health ',
   
   type: 'website',
   },

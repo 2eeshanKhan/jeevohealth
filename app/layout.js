@@ -12,33 +12,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Trinetra Techno – Smart Home Automation & IoT Solutions",
+  title: "Jeevo Health",
   description:
-    "Trinetra Techno delivers advanced Smart Home Automation, IoT Security Solutions, Smart Lighting, Voice Control Systems, and Energy-Efficient Smart Living technology.",
-  metadataBase: new URL("http://www.trinetratechno.world/"),
+    "Jeevo Health",
+  metadataBase: new URL("http://jeevohealth.com/"),
   keywords: [
-    "Smart Home Automation",
-    "IoT Solutions",
-    "Home Security Systems",
-    "Smart Lighting",
-    "Voice Control",
-    "Automation Company India",
-    "Smart Devices",
-    "Trinetra Techno",
+    "Lasik",
+    "Bariatic Surgery",
+    "Best Kidney Transplant",
+    "Jeevo",
+    "Best Eye Surgery in Mumbai",
+    "Best Eye Surgery in Delhi"
+   
   ],
 
   openGraph: {
-    title: "Trinetra Techno – Smart Home Automation & IoT Solutions",
+    title: "Jeevo Health",
     description:
-      "Upgrade your home with modern automation, enhanced security, and seamless IoT connectivity with Trinetra Techno.",
-    url: "http://www.trinetratechno.world/",
-    siteName: "Trinetra Techno",
+      "Jeevo Health",
+    url: "http://jeevohealth.com/",
+    siteName: "Jeevo Health",
     images: [
       {
-        url: "/Trinetralogo.jpeg", // Replace with your actual OG banner
+        url: "/img4.png", // Replace with your actual OG banner
         width: 1200,
         height: 630,
-        alt: "Trinetra Techno – Smart Home Automation",
+        alt: "Jeevo Health",
       },
     ],
     locale: "en_US",
@@ -47,10 +46,10 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Trinetra Techno – Smart Home Automation & IoT Solutions",
+    title: "Jeevo Health",
     description:
-      "Smart home solutions designed for comfort, security, and energy efficiency.",
-    images: ["/Trinetralogo.jpeg"],
+      "Jeevo Health",
+    images: ["/img4.png"],
   },
 
   icons: {
