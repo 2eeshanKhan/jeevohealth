@@ -214,7 +214,7 @@ export default function ServiceFaq() {
           "
           >
             <Image
-              src="/hospital-support.jpg"
+              src="/support1.jpeg"
               alt="Healthcare Support"
               width={600}
               height={400}
@@ -269,10 +269,10 @@ export default function ServiceFaq() {
           "
           >
             <Image
-              src="/hospital-doctor.jpg"
+           src="/support1.jpeg"
               alt="Jeevo Health"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </motion.div>
         </div>

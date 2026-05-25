@@ -139,7 +139,7 @@ export default function AboutPage() {
       <section className="relative h-[75vh] w-full overflow-hidden">
 
         <Image
-          src="/hospital-about.jpg"
+          src="/jeevoban.png"
           alt="Jeevo Health"
           fill
           priority
