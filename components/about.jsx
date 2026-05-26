@@ -109,21 +109,21 @@ export default function AboutPage() {
 
   const founders = [
     {
-      name: "Dr. Rahul Sharma",
+      name: "Mohit Ahuja",
       role: "Founder & Healthcare Director",
 
       desc:
-        "Dr. Rahul Sharma focuses on building accessible healthcare solutions with trusted doctors, advanced treatments, and patient-centric care.",
+        "Mohit Ahuja focuses on building accessible healthcare solutions with trusted doctors, advanced treatments, and patient-centric care.",
 
       img: "/founder1.jpg",
     },
 
     {
-      name: "Aman Verma",
-      role: "Co-Founder, Operations & Support",
+      name: "Mr. Abhishek",
+      role: "Co-Founder",
 
       desc:
-        "Aman leads healthcare operations and patient assistance, ensuring seamless treatment coordination and support throughout the healthcare journey.",
+        "Abhishek leads healthcare operations and patient assistance, ensuring seamless treatment coordination and support throughout the healthcare journey.",
 
       img: "/founder2.jpg",
     },
