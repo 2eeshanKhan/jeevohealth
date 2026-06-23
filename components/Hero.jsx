@@ -98,19 +98,21 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap gap-4">
 
               {/* PRIMARY CTA */}
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
+                href="https://wa.me/918182837993?text=Hi, I want consultation for treatment"
+                target="_blank"
                 className="bg-[#0F766E] hover:bg-[#0b5f58] transition text-white px-8 py-4 rounded-2xl font-semibold shadow-xl"
               >
                 Book Free Consultation
-              </motion.button>
+              </motion.a>
 
               {/* WHATSAPP */}
               <motion.a
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                href="https://wa.me/919999999999?text=Hi, I want consultation for treatment"
+                href="https://wa.me/918182837993?text=Hi, I want consultation for treatment"
                 target="_blank"
                 className="bg-[#22C55E] hover:bg-[#16a34a] transition text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-2 shadow-xl"
               >
@@ -186,7 +188,7 @@ export default function Hero() {
               {/* SUPPORT */}
               <div className="flex items-center justify-center gap-2 mt-6 text-sm text-gray-500">
                 <Phone size={16} />
-                <span>Need urgent help? Call: +91 9876543210</span>
+                <span>Need urgent help? Call: +91 8182837993</span>
               </div>
             </div>
           </motion.div>

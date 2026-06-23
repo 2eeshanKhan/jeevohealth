@@ -16,7 +16,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen font-sans text-gray-800 bg-white">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <ServiceSection />
       <WhoWeAre />
@@ -28,7 +28,7 @@ export default function Home() {
       <Faq />
       <Blog />
      <ClientReviews />
-     <Footer />
+     {/* <Footer /> */}
     </div>
   );
 }

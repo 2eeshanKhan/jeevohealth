@@ -1,89 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-
-// export default function AboutPage() {
-//   return (
-//     <main className="bg-[#f8f9fb]">
-      
-//       {/* HERO */}
-//       <section className="py-24 bg-white">
-//         <div className="max-w-6xl mx-auto px-6 text-center">
-//           <motion.h1
-//             initial={{ opacity: 0, y: 30 }}
-//             whileInView={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 0.7 }}
-//             className="text-4xl lg:text-5xl font-semibold text-gray-900"
-//           >
-//             About Trinetra Technoworld
-//           </motion.h1>
-
-//           <p className="mt-6 max-w-3xl mx-auto text-gray-600 leading-relaxed">
-//             Trinetra Technoworld is where innovation meets comfort in the realm of
-//             smart home automation. We transform ordinary living spaces into
-//             intelligent, secure, and energy-efficient environments.
-//           </p>
-//         </div>
-//       </section>
-
-//       {/* ABOUT CONTENT */}
-//       <section className="py-20">
-//         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-          
-//           <div>
-//             <h2 className="text-2xl font-semibold text-gray-900">
-//               Who We Are
-//             </h2>
-//             <p className="mt-4 text-gray-600 leading-relaxed">
-//               As pioneers in smart housing, Trinetra Technoworld designs homes
-//               using cutting-edge technology and eco-friendly solutions. Our
-//               approach ensures a seamless blend of future-ready automation with
-//               everyday living.
-//             </p>
-//           </div>
-
-//           <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
-//             <Image
-//               src="/about-smart-home.jpg"
-//               alt="Smart Home"
-//               width={600}
-//               height={400}
-//               className="object-cover"
-//             />
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* VISION & MISSION */}
-//       <section className="py-24 bg-white">
-//         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
-          
-//           <div>
-//             <h3 className="text-xl font-semibold text-gray-900">Our Vision</h3>
-//             <p className="mt-4 text-gray-600 leading-relaxed">
-//               Our vision is to build an eco-system that ranks among the top five
-//               globally, driven by a strong customer-centric approach and
-//               sustainable innovation.
-//             </p>
-//           </div>
-
-//           <div>
-//             <h3 className="text-xl font-semibold text-gray-900">Our Mission</h3>
-//             <p className="mt-4 text-gray-600 leading-relaxed">
-//               We focus on long-term value creation through ethical practices,
-//               smart work, and best-in-class solutions delivered via globally
-//               leading technology partners.
-//             </p>
-//           </div>
-
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
-
 "use client";
 
 import Image from "next/image";
@@ -135,78 +49,153 @@ export default function AboutPage() {
       {/* ======================================================
           HERO SECTION
       ====================================================== */}
+<section className="relative overflow-hidden bg-gradient-to-r from-white via-[#f7fbfa] to-[#eef9f7] py-24 lg:py-32">
 
-      <section className="relative h-[75vh] w-full overflow-hidden">
+  {/* Background Shapes */}
 
-        <Image
-          src="/jeevoban.png"
-          alt="Jeevo Health"
-          fill
-          priority
-          className="object-cover"
-        />
+  <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-[#0F766E]/10 rounded-full blur-3xl" />
 
-        {/* OVERLAY */}
-        <div
-          className="
-          absolute inset-0
-          bg-[#0F172A]/65
-          flex items-center justify-center
-          text-center px-6
-        "
-        >
-          <div>
+  <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#22C55E]/10 rounded-full blur-3xl" />
 
-            {/* BADGE */}
-            <span
-              className="
-              inline-block
-              bg-white/10
-              backdrop-blur-md
-              border border-white/10
-              text-orange-300
-              px-5 py-2
-              rounded-full
-              text-sm font-semibold
-            "
-            >
-              ABOUT JEEVO HEALTH
-            </span>
+  <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
 
-            {/* HEADING */}
-            <h1
-              className="
-              mt-6
-              text-4xl lg:text-6xl
-              font-bold
-              text-white
-              leading-tight
-              max-w-5xl
-            "
-            >
-              Simplifying Healthcare
-              <br />
+    <div className="text-center max-w-4xl mx-auto">
 
-              With Trusted Medical Support
-            </h1>
+      {/* Badge */}
 
-            {/* SUBTEXT */}
-            <p
-              className="
-              mt-5
-              text-white/75
-              max-w-2xl
-              mx-auto
-              leading-relaxed
-            "
-            >
-              Jeevo Health connects patients with experienced doctors,
-              advanced hospitals, and dedicated healthcare support
-              for stress-free treatment journeys.
-            </p>
-          </div>
+      <span className="
+        inline-flex
+        items-center
+        gap-2
+        bg-[#0F766E]/10
+        text-[#0F766E]
+        border
+        border-[#0F766E]/10
+        px-5
+        py-2
+        rounded-full
+        text-sm
+        font-semibold
+      ">
+        About Jeevo Health
+      </span>
+
+      {/* Heading */}
+
+      <h1 className="
+        mt-8
+        text-5xl
+        md:text-6xl
+        lg:text-7xl
+        font-bold
+        leading-tight
+        text-gray-900
+      ">
+        Simplifying Healthcare
+        <br />
+
+        <span className="text-[#0F766E]">
+          With Trusted Medical Support
+        </span>
+      </h1>
+
+      {/* Description */}
+
+      <p className="
+        mt-8
+        text-lg
+        text-gray-600
+        max-w-3xl
+        mx-auto
+        leading-relaxed
+      ">
+        Jeevo Health connects patients with experienced
+        doctors, trusted hospitals, and dedicated care
+        coordinators to ensure a seamless healthcare
+        journey from consultation to recovery.
+      </p>
+
+      {/* Buttons */}
+
+      <div className="flex flex-wrap justify-center gap-4 mt-10">
+
+        <button className="
+          bg-[#0F766E]
+          hover:bg-[#0b5f58]
+          text-white
+          px-8
+          py-4
+          rounded-lg
+          font-semibold
+          transition
+        ">
+          Book Consultation
+        </button>
+
+        <button className="
+          border
+          border-[#0F766E]
+          text-[#0F766E]
+          px-8
+          py-4
+          rounded-lg
+          font-semibold
+          hover:bg-[#0F766E]
+          hover:text-white
+          transition
+        ">
+          Learn More
+        </button>
+
+      </div>
+
+      {/* Stats */}
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+
+        <div>
+          <h3 className="text-4xl font-bold text-[#0F766E]">
+            1000+
+          </h3>
+          <p className="text-gray-500 mt-2">
+            Patients Assisted
+          </p>
         </div>
-      </section>
+
+        <div>
+          <h3 className="text-4xl font-bold text-[#0F766E]">
+            50+
+          </h3>
+          <p className="text-gray-500 mt-2">
+            Specialists
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-4xl font-bold text-[#0F766E]">
+            25+
+          </h3>
+          <p className="text-gray-500 mt-2">
+            Hospitals
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-4xl font-bold text-[#0F766E]">
+            24x7
+          </h3>
+          <p className="text-gray-500 mt-2">
+            Patient Support
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* COMPONENTS */}
 

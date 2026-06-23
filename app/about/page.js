@@ -21,9 +21,9 @@ export const metadata  = {
 const AboutUs = () => {
   return (
     <div>
-        <Navbar />
+       
       <About  />
-      <Footer />
+
     </div>
   )
 }
