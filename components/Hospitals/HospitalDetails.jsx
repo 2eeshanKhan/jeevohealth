@@ -320,10 +320,12 @@ const HospitalDetails = ({ id }) => {
     router.push(`/hospital?id=${uId}`);
   };
 
-  const handleClickEvent = (uId) => {
-    router.push(`/doctor?id=${uId}`);
-  };
-
+  // const handleClickEvent = (uId) => {
+  //   router.push(`/doctor?id=${uId}`);
+  // };
+const handleClickEvent = (uId) => {
+  router.push(`/doctor/${uId}`);
+};
   if (loading) {
     return (
      <div className="min-h-screen bg-[#F7FBFA] flex items-center justify-center">
@@ -457,7 +459,7 @@ const HospitalDetails = ({ id }) => {
           <button
            onClick={() =>
               window.open(
-                "https://api.whatsapp.com/send/?phone=%2B918182837993&text=Hello%21"
+                "https://api.whatsapp.com/send/?phone=%2B919987537993&text=Hello%21"
               )
             }
             className="
@@ -476,7 +478,7 @@ const HospitalDetails = ({ id }) => {
           <button
             onClick={() =>
               window.open(
-                "https://api.whatsapp.com/send/?phone=%2B918182837993&text=Hello%21"
+                "https://api.whatsapp.com/send/?phone=%2B919987537993&text=Hello%21"
               )
             }
             className="

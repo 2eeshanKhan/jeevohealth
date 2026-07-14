@@ -430,7 +430,7 @@ export default function Footer() {
 
               <p className="flex gap-2 items-center">
                 <Phone size={16} />
-                +91 8182837993
+                +91 9987537993
               </p>
 
               <p className="flex gap-2 items-center">

@@ -349,7 +349,7 @@ export default function ContactUsPage() {
                 </p>
 
                 <p className="text-gray-600 text-sm mt-1">
-                  +91 8182837993
+                  +91 9987537993
                 </p>
               </div>
             </div>

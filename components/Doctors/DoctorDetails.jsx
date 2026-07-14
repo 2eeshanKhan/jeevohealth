@@ -310,7 +310,7 @@ const DoctorDetails = ({ id }) => {
 
   <div className="grid md:grid-cols-2 gap-6">
 
-    <div className="bg-[#f8fbfb] border border-gray-100 rounded-lg p-5">
+    {/* <div className="bg-[#f8fbfb] border border-gray-100 rounded-lg p-5">
 
       <h3 className="font-semibold text-[#0F766E] text-lg mb-3">
         Education
@@ -321,7 +321,17 @@ const DoctorDetails = ({ id }) => {
           "Qualification information not available."}
       </p>
 
-    </div>
+    </div> */}
+    <div className="bg-[#f8fbfb] border border-gray-100 rounded-lg p-5 w-full">
+  <h3 className="font-semibold text-[#0F766E] text-lg mb-3">
+    Education
+  </h3>
+
+  <p className="text-gray-600 leading-7 break-words whitespace-pre-wrap">
+    {doctor?.qualification?.trim() ||
+      "Qualification information not available."}
+  </p>
+</div>
 
     <div className="bg-[#f8fbfb] border border-gray-100 rounded-lg p-5">
 
